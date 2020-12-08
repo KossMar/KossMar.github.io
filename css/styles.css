@@ -1,0 +1,94 @@
+body {
+    text-align: center;
+}
+
+section {
+    margin: 4rem 0;
+}
+
+hr {
+    height: 0;
+    border-color: #d6e0f0;
+    border-style: none dotted none none;
+    border-width: 6px;
+    height: 3rem;
+    width: 0%;
+  }
+
+#title {
+    margin: 1rem 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat";
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin: 2rem 0;
+}
+
+.nav-link {
+    padding: .4rem .5rem;
+}
+
+.position-company {
+    display: inline-block;
+}
+
+.company {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.position {
+    font-style: italic;
+}
+
+.position-company p {
+    display: inline-block;
+}
+
+.location {
+    font-weight: 200;
+}
+
+.period {
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.experience-head {
+    margin-bottom: .5rem;
+}
+
+.experience-head p {
+    margin: 0;
+} 
+
+.experience-body {
+    margin: 1.5rem 0;
+}
+
+.experience-card {
+    margin: 3rem 0;
+}
+
+.nav-narrow {
+    display: none;
+}
+
+@media (max-width: 575.98px) {
+    .nav-wide {   
+        display: none;
+    }
+
+    .nav-narrow {
+        display: block;
+    }
+}
