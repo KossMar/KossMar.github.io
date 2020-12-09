@@ -116,3 +116,10 @@ h2 {
 .skills-col-body {
     /* margin: auto auto; */
 }
+
+.card-img-top {
+    border-radius: 10%;
+    object-fit: cover;
+    width: 250px;
+    height: 100%;
+}

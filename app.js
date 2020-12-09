@@ -80,7 +80,7 @@ skillsArr.forEach((skillCategory) => {
 
         // Create Individual Skill Card
         var skillCardDiv = document.createElement("div");
-        skillCardDiv.classList.add("skill-card", "col-lg-3", "col-md-4", "col-sm-6");
+        skillCardDiv.classList.add("skill-card", "col-lg-4", "col-md-4", "col-sm-6");
 
         // Create Skill Title
         var skillTitleDiv = document.createElement("div");
