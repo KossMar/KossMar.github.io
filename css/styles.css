@@ -92,3 +92,27 @@ h2 {
         display: block;
     }
 }
+
+.skill-card {
+    padding: 0.5rem 0.7rem;
+    margin: auto ;
+    /* background: red; */
+}
+
+
+.skill-section {
+    padding: 0.7rem 2.7rem;
+    margin: 1.5rem 0;
+}
+
+.skill-section h3 {
+    margin-bottom: 1rem;
+}
+
+.skill-title {
+    /* margin-bottom: 1rem; */
+}
+
+.skills-col-body {
+    /* margin: auto auto; */
+}
