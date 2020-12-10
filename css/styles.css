@@ -57,8 +57,13 @@ h2 {
     padding: .4rem .5rem;
 }
 
+.nav-pad {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
 .extra-pad {
-    padding-top: 105px;
+    padding-top: 90px;
 }
 
 .position-company {
