@@ -126,3 +126,18 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
+var navbar = document.getElementById("nav-main");
+var experience = document.getElementsByClassName("experience__section-container")[0];
+
+var sticky = navbar.offsetTop;
+
+window.onscroll = () => {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        experience.classList.add("extra-pad");
+      } else {
+        navbar.classList.remove("sticky");
+        experience.classList.remove("extra-pad");
+      }
+}
+

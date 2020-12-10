@@ -33,8 +33,32 @@ h2 {
     margin: 2rem 0;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.content {
+    padding: 16px;
+}
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+#nav-main {
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 100;
+}
+
 .nav-link {
     padding: .4rem .5rem;
+}
+
+.extra-pad {
+    padding-top: 105px;
 }
 
 .position-company {
@@ -95,6 +119,10 @@ h2 {
     .nav-narrow {
         display: block;
     }
+}
+
+.section-container {
+    padding-top: 72px;
 }
 
 .skill-card {
