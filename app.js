@@ -107,7 +107,7 @@ var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () { 
+    coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
 
         var content = this.nextElementSibling;
@@ -115,7 +115,7 @@ for (i = 0; i < coll.length; i++) {
 
 
         if (this.classList.contains("active")) {
-            content.style.maxHeight =  content.scrollHeight + "px";
+            content.style.maxHeight = content.scrollHeight + "px";
             this.innerHTML = "Less Info"
             container.style.backgroundColor = "#f7fbfc";
         } else {
@@ -127,17 +127,53 @@ for (i = 0; i < coll.length; i++) {
 }
 
 var navbar = document.getElementById("nav-main");
+var navbg = document.getElementsByClassName("nav-bg")[0];
 var experience = document.getElementsByClassName("experience__section-container")[0];
+var blackLogo = document.getElementsByClassName('logo-black')[0];
 
 var sticky = navbar.offsetTop;
 
+const logoStart = 250;
+const navStart = 350;
+const end = 380;
+
 window.onscroll = () => {
-    if (window.pageYOffset >= sticky) {
+    const currentScroll = window.pageYOffset
+
+    let navOpacity = 0;
+    let logoOpacity = 0;
+
+    if (currentScroll >= sticky) {
         navbar.classList.add("sticky")
-        experience.classList.add("extra-pad");
-      } else {
+        navbar.classList.remove("abso")
+    } else {
+        navbar.classList.add("abso");
         navbar.classList.remove("sticky");
-        experience.classList.remove("extra-pad");
-      }
+    }
+
+    if (currentScroll < navStart) {
+        navOpacity = 0
+    } else if (currentScroll >= navStart && currentScroll <= end) {
+        navOpacity = (currentScroll - navStart) / (end - navStart) ;
+        console.log(navOpacity)
+    } else if (currentScroll > end) {
+        navOpacity = 1
+        console.log(navOpacity)
+    }
+
+    if (currentScroll < logoStart) {
+        logoOpacity = 0
+    } else if (currentScroll >= logoStart && currentScroll <= end) {
+        logoOpacity = (currentScroll - logoStart) / (end - logoStart) ;
+        console.log(logoOpacity)
+    } else if (currentScroll > end) {
+        logoOpacity = 1
+        console.log(logoOpacity)
+    }
+
+
+    navbg.style.opacity = navOpacity
+    blackLogo.style.opacity = logoOpacity
+    //   document.querySelector('.nav-bg'.style.opacity = opacity)
 }
 
