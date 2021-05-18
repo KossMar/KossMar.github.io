@@ -18,82 +18,92 @@
 </head>
 
 <body>
-    <section id="title">
-        <div class="container-fluid">
-            <div class="container py-5 px-3">
-                <h1 class="fw-light">Mar Koss</h1>
-                <h5>Software Developer</h5>
-                <div class="pb-2">
-                    <a
-                        href="https://www.linkedin.com/in/nicholas-mar-koss/">https://www.linkedin.com/in/nicholas-mar-koss/</a>
-                </div>
-
-                <p>I’m a self-motivated software developer, specializing in web and mobile development. I’m inspired by the multiple
-                    languages of the mind that coding engages, combining my passion for both
-                    structure
-                    and creativity. I’m enthusiastic about well architectured, tested, quality code and am always
-                    looking for new ways to deliver this in my work through new technology and ideas. Attention to
-                    detail is important to me. My background in event / project management has sharpened my ability
-                    to
-                    focus, manage tasks, collaborate with a team and see projects to completion. If I’m not
-                    programming,
-                    I’m making music, working with electronics or otherwise creating. </p>
-            </div>
-        </div>
-
-    </section>
-
-    <div class="container mx-auto" id="nav-main">
-        <div class="nav-pad">
-            <div class="container nav-wide">
-                <div class="row row-cols-2 row-cols-sm-4">
-                    <div class="col text-center py-2">
-                        <a href="#experience" class="btn btn-dark nav-link"> Experience </a>
-                    </div>
-                    <div class="col text-center py-2">
-                        <a href="#projects" class="btn btn-dark nav-link"> Projects </a>
-                    </div>
-                    <div class="col text-center py-2">
-                        <a href="#skills" class="btn btn-dark nav-link"> Skills </a>
-                    </div>
-                    <div class="col text-center py-2">
-                        <a href="#education" class="btn btn-dark nav-link"> Education </a>
-                    </div>
+    <div class='header'>
+        <section id="title">
+            <div class="container-fluid">
+                <div class="container px-3">
+                    <h1 class="fw-light">Mar Koss</h1>
+                    <h5>Front-End Developer</h5>
+                    <!-- <div class="pb-2">
+                        <a
+                            href="https://www.linkedin.com/in/nicholas-mar-koss/">https://www.linkedin.com/in/nicholas-mar-koss/</a>
+                    </div> -->
                 </div>
             </div>
-
-            <div class="container nav-narrow">
-                <div class="row row-cols-4">
-                    <div class="col text-center py-2">
-                        <a href="#experience" class="btn btn-dark nav-link">
-                            <img src="img/history.png" alt="">
-                        </a>
+    
+        </section>
+    
+        <div id="nav-main">
+            
+            <div class="nav-pad">
+                <div class="nav-wide">
+                    <div class="row row-cols-sm-5">
+                        <div class="col text-center py-2">
+                            <a href="#experience" class="btn btn-dark nav-link"> Experience </a>
+                        </div>
+                        <div class="col text-center py-2">
+                            <a href="#projects" class="btn btn-dark nav-link"> Projects </a>
+                        </div>
+                        <div class='col'>
+                            <img class='logo' src='img/mar-koss-logo.png'/>
+                        </div>
+                        <div class="col text-center py-2">
+                            <a href="#skills" class="btn btn-dark nav-link"> Skills </a>
+                        </div>
+                        <div class="col text-center py-2">
+                            <a href="#education" class="btn btn-dark nav-link"> Education </a>
+                        </div>
                     </div>
-                    <div class="col text-center py-2">
-                        <a href="#projects" class="btn btn-dark nav-link">
-                            <img src="img/projects.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col text-center py-2">
-                        <a href="#skills" class="btn btn-dark nav-link">
-                            <img src="img/skills.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col text-center py-2">
-                        <a href="#education" class="btn btn-dark nav-link">
-                            <img src="img/education.png" alt="">
-                        </a>
+                </div>
+    
+                <div class="container nav-narrow">
+                    <div class="row row-cols-4">
+                        <div class="col text-center py-2">
+                            <a href="#experience" class="btn btn-dark nav-link">
+                                <img src="img/history.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col text-center py-2">
+                            <a href="#projects" class="btn btn-dark nav-link">
+                                <img src="img/projects.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col text-center py-2">
+                            <a href="#skills" class="btn btn-dark nav-link">
+                                <img src="img/skills.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col text-center py-2">
+                            <a href="#education" class="btn btn-dark nav-link">
+                                <img src="img/education.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
-    <div class="container-fluid">
+    <div class="container-fluid experience__section-container">
+
+        <div>
+            <p>I’m a self-motivated software developer, specializing in front-end web and mobile development. I’m inspired by the multiple
+                languages of the mind that coding engages, combining my passion for both
+                structure
+                and creativity. I’m enthusiastic about well architectured, tested, quality code and am always
+                looking for new ways to deliver this in my work through new technology and ideas. Attention to
+                detail is important to me. My background in event / project management has sharpened my ability
+                to
+                focus, manage tasks, collaborate with a team and see projects to completion. If I’m not
+                programming,
+                I’m making music, working with electronics or otherwise creating. 
+            </p>
+        </div>
 
         <section id="experience">
 
-            <div class="experience__section-container">
+            <div class="">
 
                 <h2>Experience</h2>
 
@@ -257,7 +267,62 @@
 
                         <div class="row">
 
-                            <div class="col-md-6">
+                            <!-- ASSASSIN GAME -->
+                            <div class="col-md-4">
+                                <div class="mb-4 box-shadow project-card">
+                                    <img class="card-img-top w-50" alt="Thumbnail [100%x225]" src="img/assassin-logo-image.png"
+                                        data-holder-rendered="true">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> The Assassin Game </h3>
+                                        <p class="card-text">
+                                            A real world last-man standing fight to the death
+                                        </p>
+                                        <a class="btn btn-dark" href="https://poetika.herokuapp.com">
+                                            Kill or be killed
+                                        </a>
+                                        <!-- <button type="button" class="collapsible">Open Collapsible</button> -->
+                                        <div class="my-2">
+                                            <a class="btn collapsible text-secondary"> More Info</a>
+                                            <div class="collapsible-content">
+                                                <div class="container mt-2">
+                                                    <a class="" href="https://github.com/kossmar/assassin"
+                                                        target="_blank">https://github.com/kossmar/assassin</a>
+                                                </div>
+                                                <p></p>
+                                                <p class="font-weight-bold">Built With: </p>
+                                                <div class="container stack-info">
+                                                    <div class="row">
+                                                        <div class="col p-3">
+                                                            Node.js
+                                                        </div>
+                                                        <div class="col p-3">
+                                                            Next.js
+                                                        </div>
+                                                        <div class="col p-3">
+                                                            Auth0
+                                                        </div>
+                                                        <div class="col p-3">
+                                                            Passport.js
+                                                        </div>
+                                                        <div class="col p-3">
+                                                            React
+                                                        </div>
+                                                        <div class="col p-3">
+                                                            Tailwind
+                                                        </div>
+                                                        <div class="col p-3">
+                                                            JavaScript
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
                                 <div class="mb-4 box-shadow project-card">
                                     <img class="card-img-top" alt="Thumbnail [100%x225]" src="img/treeClimbrLogo.png"
                                         data-holder-rendered="true">
@@ -295,7 +360,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="mb-4 box-shadow project-card">
                                     <img class="card-img-top" alt="Thumbnail [100%x225]" src="img/poetika-logo.png"
                                         data-holder-rendered="true">
@@ -350,6 +415,7 @@
                                     </div>
                                 </div>
                             </div>
+
 
                         </div>
                     </div>
