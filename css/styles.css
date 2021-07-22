@@ -218,13 +218,13 @@ h2 {
   padding-right: 100px;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 665px) {
   .nav-wide {
     padding-left: 20px;
     padding-right: 20px;
   }
   .skill-section {
-    padding: 0.7rem 2.7rem;
+    padding: 0.2rem 2.7rem;
     margin: 1.5rem 0;
   }
 }
@@ -239,7 +239,7 @@ h2 {
   }
 
   .skill-section {
-    padding: 0.1rem 0.7rem;
+    padding: 0.7rem 0.7rem;
     margin: 1.5rem 0;
   }
 
