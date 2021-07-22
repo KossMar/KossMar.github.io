@@ -24,6 +24,19 @@ hr {
 
 #experience {
   margin-top: 150px;
+  scroll-margin-top: 150px;
+}
+
+#projects {
+  scroll-margin-top: 45px;
+}
+
+#skills {
+  scroll-margin-top: 45px;
+}
+
+#education {
+  scroll-margin-top: 45px;
 }
 
 #nav-main {
